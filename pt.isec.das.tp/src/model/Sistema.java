@@ -1,5 +1,6 @@
 package model;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -17,18 +18,19 @@ public final class Sistema {
 	//membro estatico da classe
 	public static Sistema sistema;
 	
-	private Sistema(List<Horario> horarios, List<Restricao> restricoes) {
+	private Sistema() {
 		// TODO Auto-generated constructor stub
 		
-		this.horarios = horarios;
-		this.restricoes = restricoes;
+		horarios = new ArrayList<Horario>();
+		restricoes = new ArrayList<Restricao>();
 	}
 
 	public static Sistema init() {
 		
 		//caso ainda nao tenha sido criado
-		if(sistema==null)
+		if(sistema==null) {
 			sistema = new Sistema();
+		}
 		
 		return sistema;
 	}

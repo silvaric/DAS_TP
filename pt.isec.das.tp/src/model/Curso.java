@@ -5,14 +5,14 @@ import java.util.List;
 public class Curso {
 	
 	private long id;
-	private String designacao;
+	private String name;
 	private List<Ano> anos;
 
 	public Curso(long id, String designacao, List<Ano> anos) {
 		// TODO Auto-generated constructor stub
 		
 		this.id = id;
-		this.designacao = designacao;
+		this.name = designacao;
 		this.anos = anos;
 	}
 
@@ -25,11 +25,11 @@ public class Curso {
 	}
 
 	public String getDesignacao() {
-		return designacao;
+		return name;
 	}
 
 	public void setDesignacao(String designacao) {
-		this.designacao = designacao;
+		this.name = designacao;
 	}
 
 	public List<Ano> getAnos() {

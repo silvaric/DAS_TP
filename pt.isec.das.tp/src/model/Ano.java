@@ -7,7 +7,7 @@ public class Ano {
 	private long id;
 	private List<Disciplina> disciplinas;
 
-	public Ano() {
+	public Ano(final long id, final List<Disciplina> disciplinas) {
 		// TODO Auto-generated constructor stub
 	}
 

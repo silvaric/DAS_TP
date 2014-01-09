@@ -5,7 +5,7 @@ public final class Aluno {
 	private long id;
 	private String nome;
 	
-	public Aluno(long id, String nome) {
+	public Aluno(final long id,final String nome) {
 		// TODO Auto-generated constructor stub
 		
 		this.setId(id);
