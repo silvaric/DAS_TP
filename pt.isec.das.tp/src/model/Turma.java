@@ -2,18 +2,18 @@ package model;
 
 import java.util.List;
 
-public final class Horario {
+public class Turma {
 	
 	private long id;
-	private String sala;
 	private List<Aula> aulas;
-	
-	public Horario(long id, String sala, List<Aula> aulas) {
+	private List<Aluno> alunos;
+
+	public Turma(long id, List<Aula> aulas, List<Aluno> alunos) {
 		// TODO Auto-generated constructor stub
 		
 		this.id = id;
-		this.sala = sala;
 		this.aulas = aulas;
+		this.setAlunos(alunos);
 	}
 
 	public long getId() {
@@ -24,14 +24,6 @@ public final class Horario {
 		this.id = id;
 	}
 
-	public String getSala() {
-		return sala;
-	}
-
-	public void setSala(String sala) {
-		this.sala = sala;
-	}
-
 	public List<Aula> getAulas() {
 		return aulas;
 	}
@@ -39,4 +31,13 @@ public final class Horario {
 	public void setAulas(List<Aula> aulas) {
 		this.aulas = aulas;
 	}
+
+	public List<Aluno> getAlunos() {
+		return alunos;
+	}
+
+	public void setAlunos(List<Aluno> alunos) {
+		this.alunos = alunos;
+	}
+
 }
